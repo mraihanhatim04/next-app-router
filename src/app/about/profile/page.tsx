@@ -1,10 +1,7 @@
-import MyNavbar from "./navbar";
-
 export default function ProfilePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <MyNavbar />
-      <h1 className="font-bold text-4xl">Profile Page</h1>
+    <div>
+      <h1 className="text-md">@mraihanhatim</h1>
     </div>
   );
 }
