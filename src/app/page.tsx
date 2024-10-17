@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <section className="bg-white dark:bg-gray-900 h-[561px]">
+    <section className="bg-slate-950  h-[561px]">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
         <h1 className="mb-4 mt-32 text-2xl font-bold leading-none md:text-4xl lg:text-6xl text-transparent bg-clip-text bg-white">
           We invest in the world’s potential
