@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <section className="bg-white dark:bg-gray-900 h-screen">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-        <h1 className="mb-4 mt-32 text-2xl font-semibold leading-none md:text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-red-500 to-sky-500">
+        <h1 className="mb-4 mt-32 text-2xl font-semibold leading-none md:text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-slate-300 via-sky-300 to-sky-50">
           We invest in the world’s potential
         </h1>
         <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
