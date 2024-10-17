@@ -8,7 +8,7 @@ export default function ProfileLayout({
       <div className="px-64 mt-14">
         <div>
           <h1 className="text-xl">Profile Page</h1>
-          <p>{children}</p>
+          {children}
         </div>
       </div>
     </>
