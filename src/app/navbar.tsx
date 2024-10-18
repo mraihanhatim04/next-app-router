@@ -62,17 +62,9 @@ export default function MyNavbar() {
           onClick={() => router.push("/login")}
           type="button"
           variant="default"
-          className="bg-gradient-to-r mt-1 from-slate-200 via-slate-300 to-slate-400 text-black px-6 py-2 rounded-xl"
+          className="bg-gradient-to-r mt-1 from-blue-500 via-blue-700 to-blue-800 text-white px-4 py-2 rounded-md"
         >
           Sign In
-        </Button>
-        <Button
-          onClick={() => router.push("/register")}
-          type="button"
-          variant="default"
-          className="bg-gradient-to-r mt-1 from-sky-600 via-sky-700 to-sky-800 text-white px-6 py-2 rounded-xl"
-        >
-          Sign Up
         </Button>
       </div>
     </div>
