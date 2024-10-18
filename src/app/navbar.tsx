@@ -1,6 +1,12 @@
+"use client";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function MyNavbar() {
+  const pathname = usePathname();
+  const router = useRouter();
+
   return (
     <div className="flex bg-slate-900 text-slate-300 py-5 justify-around">
       <div>
@@ -14,34 +20,60 @@ export default function MyNavbar() {
         </Link>
       </div>
       <div>
-        <ul className="flex lg:gap-6 gap-3 text-lg mt-2">
+        <ul className="flex lg:gap-6 gap-3 text-lg mt-2 text-white">
           <Link href="/">
-            <li className="font-semibold">Home</li>
+            <li
+              className={`${pathname === "/" && "text-sky-500 font-semibold"}`}
+            >
+              Home
+            </li>
           </Link>
-          <Link href="/about/">
-            <li className="font-semibold">About</li>
+          <Link href="/about">
+            <li
+              className={`${
+                pathname === "/about" && "text-sky-500 font-semibold"
+              }`}
+            >
+              About
+            </li>
           </Link>
           <Link href="/about/profile">
-            <li className="font-semibold">Profile</li>
+            <li
+              className={`${
+                pathname === "/about/profile" && "text-sky-500 font-semibold"
+              }`}
+            >
+              Profile
+            </li>
           </Link>
           <Link href="/product">
-            <li className="font-semibold">Product</li>
+            <li
+              className={`${
+                pathname === "/product" && "text-sky-500 font-semibold"
+              }`}
+            >
+              Product
+            </li>
           </Link>
         </ul>
       </div>
       <div className="flex gap-2 text-sm font-semibold tracking-wide">
-        <Link
-          href="/login"
+        <Button
+          onClick={() => router.push("/login")}
+          type="button"
+          variant="default"
           className="bg-gradient-to-r mt-1 from-slate-200 via-slate-300 to-slate-400 text-black px-6 py-2 rounded-xl"
         >
           Sign In
-        </Link>
-        <Link
-          href="/register"
+        </Button>
+        <Button
+          onClick={() => router.push("/register")}
+          type="button"
+          variant="default"
           className="bg-gradient-to-r mt-1 from-sky-600 via-sky-700 to-sky-800 text-white px-6 py-2 rounded-xl"
         >
           Sign Up
-        </Link>
+        </Button>
       </div>
     </div>
   );
