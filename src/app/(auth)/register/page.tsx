@@ -17,15 +17,15 @@ export default function RegisterPage() {
   return (
     <>
       <div className="flex h-screen justify-center items-center p-4">
-        <Card className="w-[450px] shadow-xl">
-          <CardHeader>
-            <CardTitle className="text-3xl font-bold">Register</CardTitle>
-            <CardDescription className="font-semibold text-slate-600">
-              Sign Up to our platform
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <form>
+        <form>
+          <Card className="w-[450px] shadow-xl">
+            <CardHeader>
+              <CardTitle className="text-3xl font-bold">Register</CardTitle>
+              <CardDescription className="font-semibold text-slate-600">
+                Sign Up to our platform
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
               <div className="grid w-full items-center gap-4">
                 <div className="flex flex-col space-y-1">
                   <Label htmlFor="fullname">FullName</Label>
@@ -33,15 +33,6 @@ export default function RegisterPage() {
                     type="text"
                     id="fullname"
                     placeholder="Your FullName"
-                    required
-                  />
-                </div>
-                <div className="flex flex-col space-y-1">
-                  <Label htmlFor="username">Username</Label>
-                  <Input
-                    type="text"
-                    id="username"
-                    placeholder="Your Username"
                     required
                   />
                 </div>
@@ -64,18 +55,18 @@ export default function RegisterPage() {
                   />
                 </div>
               </div>
-            </form>
-          </CardContent>
-          <CardFooter className="flex flex-col space-y-3">
-            <Button className="w-full">Register</Button>
-            <p className="text-sm">
-              Have an account?{" "}
-              <Link href="/login">
-                <span className="underline font-bold">Sign In here</span>
-              </Link>
-            </p>
-          </CardFooter>
-        </Card>
+            </CardContent>
+            <CardFooter className="flex flex-col space-y-3">
+              <Button className="w-full">Register</Button>
+              <p className="text-sm">
+                Have an account?{" "}
+                <Link href="/login">
+                  <span className="underline font-bold">Sign In here</span>
+                </Link>
+              </p>
+            </CardFooter>
+          </Card>
+        </form>
       </div>
     </>
   );
