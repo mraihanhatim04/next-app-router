@@ -30,7 +30,7 @@ export default async function ProductPage(props: ProductPageProps) {
 
   return (
     <>
-      <div className=" bg-slate-950 text-white p-4">
+      <div className=" p-4">
         <div className="p-4">
           <h1 className="ml-36 text-3xl font-bold tracking-widest">
             {params.slug ? "Detail Product Page" : "Our Product"}
