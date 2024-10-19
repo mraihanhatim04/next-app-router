@@ -55,6 +55,15 @@ export default function MyNavbar() {
               Product
             </li>
           </Link>
+          <Link href="dashboard/product">
+            <li
+              className={`${
+                pathname === "dashboard/product" && "text-sky-500 font-semibold"
+              }`}
+            >
+              AdminProduct
+            </li>
+          </Link>
         </ul>
       </div>
       <div className="flex gap-2 text-sm font-semibold tracking-wide">
