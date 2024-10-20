@@ -11,15 +11,22 @@ import { FaCartPlus } from "react-icons/fa6";
 type ProductPageProps = { params: { slug: string[] } };
 
 async function getData() {
+  // OPEN API
   // const res = await fetch(
-  //   "https://fakestoreapi.com/products/category/electronics"
+  //   "https://fakestoreapi.com/products/category/electronics",
+  //   {
+  //     cache: "no-store",
+  //   }
   // );
+
+  // LOKAL API
   const res = await fetch("http://localhost:3000/api/products", {
     cache: "force-cache",
     next: {
       tags: ["products"],
     },
   });
+
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
